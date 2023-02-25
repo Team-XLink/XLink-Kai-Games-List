@@ -1,5 +1,6 @@
 name: "XLink Kai Game Support"
 description: "Report a game's ability to play over XLink Kai"
+labels: ["needs-attention"]
 body:
   - type: input
     id: game-name
