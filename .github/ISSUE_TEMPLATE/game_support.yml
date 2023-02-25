@@ -45,6 +45,7 @@ body:
       options:
         - Yes, game version must match
         - No, game version does not matter
+        - Unknown
         - Other (Explained below in game information)
     validations:
       required: true
