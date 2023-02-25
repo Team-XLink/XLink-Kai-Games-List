@@ -87,12 +87,12 @@ body:
   - type: dropdown
     id: has-lan
     attributes:
-      label: "Has LAN"
+      label: "Has LAN/System-Link/Ad-hoc/Local Wireless"
       description: "What kind of multiplayer support does the game have"
       options:
-        - Has LAN
-        - Does not have LAN
-        - Adhoc (PSP, PS Vita, and PSTV)
+        - Yes, has LAN
+        - No, does not have LAN
+        - Ad-hoc (PSP, PS Vita, and PSTV)
         - Local Wireless (Nintendo Switch)
         - Unsure
     validations:
