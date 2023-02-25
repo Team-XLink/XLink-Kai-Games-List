@@ -37,6 +37,17 @@ body:
       placeholder: "###### (e.g. 4D530064 or BCES01670 or 0100152000022000)"
     validations:
       required: false
+  - type: dropdown
+    id: game-update-match
+    attributes:
+      label: "Game version must match?"
+      description: "Do players have to have the same version/update of the game to be able to play together?"
+      options:
+        - Yes, game version must match
+        - No, game version does not matter
+        - Other (Explained below in game information)
+    validations:
+      required: true
   - type: input
     id: game-version
     attributes:
