@@ -28,6 +28,7 @@ body:
         - Wii
         - Wii U
         - Switch
+        - Other
     validations:
       required: true
   - type: input
@@ -43,9 +44,9 @@ body:
       label: "Game version must match?"
       description: "Do players have to have the same version/update of the game to be able to play together?"
       options:
+        - Unknown
         - Yes, game version must match
         - No, game version does not matter
-        - Unknown
         - Other (Explained below in game information)
     validations:
       required: true
@@ -94,6 +95,7 @@ body:
         - Linux armhf
         - Linux aarch64/arm64
         - Linux (Raspberry Pi)
+        - Other
     validations:
       required: true
   - type: dropdown
@@ -102,11 +104,11 @@ body:
       label: "Has LAN/System-Link/Ad-hoc/Local Wireless"
       description: "What kind of multiplayer support does the game have"
       options:
+        - Unknown
         - Yes, has LAN
         - No, does not have LAN
         - Ad-hoc (PSP, PS Vita, and PSTV)
         - Local Wireless (Nintendo Switch)
-        - Unsure
     validations:
       required: true
   - type: textarea
