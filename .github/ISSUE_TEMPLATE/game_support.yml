@@ -1,0 +1,141 @@
+name: "XLink Kai Game Support"
+description: "Report a game's ability to play over XLink Kai"
+body:
+  - type: input
+    id: game-name
+    attributes:
+      label: "Game Name"
+      placeholder: "(e.g. Halo 3 or Uncharted 3 Game of the Year)"
+    validations:
+      required: true
+  - type: dropdown
+    id: game-platform
+    attributes:
+      label: "Game Platform"
+      description: "What console is the game for"
+      options:
+        - Xbox
+        - Xbox 360
+        - Xbox One
+        - Xbox Series X/Series S
+        - PlayStation 2
+        - PlayStation 3
+        - PlayStation 4
+        - PlayStation 5
+        - PlayStation Portable (PSP)
+        - PlayStation Vita (and PSTV)
+        - GameCube
+        - Wii
+        - Wii U
+        - Switch
+    validations:
+      required: true
+  - type: input
+    id: game-titleid
+    attributes:
+      label: Game Title ID
+      placeholder: "###### (e.g. 4D530064 or BCES01670 or 0100152000022000)"
+    validations:
+      required: false
+  - type: input
+    id: game-version
+    attributes:
+      label: Game Update Version
+      placeholder: "(e.g. 1.0.0 or 1.1.3)"
+    validations:
+      required: false
+  - type: textarea
+    id: emulator
+    attributes:
+      label: Emulators
+      description: "If you are playing this game using an emulator, please tell us about it"
+      placeholder: |
+        What emulator are you using?
+        What version of the emulator?
+        Are there any specific settings you need to use?
+    validations:
+      required: false
+  - type: input
+    id: xlink-kai-version
+    attributes:
+      label: XLink Kai Version
+      description: "What version of XLink Kai are you running?"
+      placeholder: "7.4.## (e.g. 7.4.44)"
+    validations:
+      required: true
+  - type: dropdown
+    id: xlink-kai-platform
+    attributes:
+      label: What is XLink Kai running on?
+      options:
+        - Windows 7
+        - Windows 8
+        - Windows 10
+        - Windows 11
+        - Windows (Other)
+        - macOS 10.x
+        - macOS 11+ Intel (x86_64)
+        - macOS 11+ M1 (arm64)
+        - Linux x86
+        - Linux amd64/x86_64
+        - Linux armel
+        - Linux armhf
+        - Linux aarch64/arm64
+        - Linux (Raspberry Pi)
+    validations:
+      required: true
+  - type: dropdown
+    id: has-lan
+    attributes:
+      label: "Has LAN"
+      description: "What kind of multiplayer support does the game have"
+      options:
+        - Has LAN
+        - Does not have LAN
+        - Adhoc (PSP, PS Vita, and PSTV)
+        - Local Wireless (Nintendo Switch)
+        - Unsure
+    validations:
+      required: true
+  - type: textarea
+    id: game-information
+    attributes:
+      label: "Game Information"
+      description: "Describe information about the game"
+      placeholder: |
+        How many players are supported?
+        Does the game have multiple game modes like coop or versus?
+        Are there different numbers of players allowed in each mode?
+        If applicable, does the game work for players in different regions? (For example PAL vs NTSC)
+        Does this game run on multiple consoles under backwards compatibility? For example a PS4 game run on PS5. Or an Xbox game run on Xbox 360.
+        Does the game require a modification to work?
+        Does the console require a modification?
+    validations:
+      required: true
+  - type: textarea
+    id: network-information
+    attributes:
+      label: "Network Information"
+      description: "Describe your network set up"
+      placeholder: |
+        How are your computer and game console connected to your network?
+        Are you on WiFi?
+        How are you connected to the internet?
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: "Screenshots"
+      description: "If possible add screenshots here of the game menus with LAN mode."
+      placeholder: "Drag and drop the images/screenshots here."
+    validations:
+      required: false
+  - type: textarea
+    id: log
+    attributes:
+      label: Log Files
+      description: "If relevant please include any log files"
+      placeholder: "Drag and drop the log file onto the text area."
+    validations:
+      required: false
